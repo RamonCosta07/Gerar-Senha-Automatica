@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+html, body{
+    height: auto;
+    min-height: 100vh;
+}
+
+html{
+    background: linear-gradient(180deg, rgba(234, 2, 255, 1) 0%, #0097ff 100%);
+}
+
+input:focus{
+    outline: none;
+}
+
+#registro-container{
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#banner-registro{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+#banner-layer{
+    background-color: rgba(25, 11, 122, 0.7);
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#banner-layer h1{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+#form-registro{
+    background-color: #fdfdfd;
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-registro h2{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+#form-registro p{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+    color: #AAA;
+}
+
+.form-control{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: .6rem;
+}
+
+.form-control input{
+    border: none;
+    border-bottom: 1px solid #AAA;
+    padding: .6rem 0;
+}
+
+#gerador-senha{
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#gerador-senha:hover{
+    color: #0099FF;
+}
+
+#senha-gerada{
+    border: 1px solid #0099FF;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: .4rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+#senha-gerada p{
+    color: #81D340;
+    margin-bottom: .5rem;
+}
+
+#form-registro input[type="submit"]{
+    background: #81D340;
+    color: white;
+    opacity: .8;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: .4s;
+}
+
+#form-registro input[type="submit"]:hover{
+    opacity: 1;
+}

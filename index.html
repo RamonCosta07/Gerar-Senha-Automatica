@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="registro-container">
+      <div id="banner-registro">
+        <div id="banner-layer">
+          <h1>Bem-vindo</h1>
+        </div>
+      </div>
+      <div id="form-registro">
+        <h2>Crie sua conta</h2>
+        <p>Registre-se</p>
+        <div class="form-control">
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Digite o seu nome"
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            email="email"
+            id="email"
+            placeholder="Digite o seu e-mail"
+          />
+        </div>
+
+        <div class="form-control">
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            password="password"
+            id="password"
+            placeholder="Digite a sua senha"
+          />
+        </div>
+
+        <p>
+          Deseja uma sugestão de senha segura?
+          <span id="gerador-senha">Clica aqui</span>
+        </p>
+
+        <div id="senha-gerada">
+            <p>Sua senha gerada: </p>
+            <h4></h4>
+        </div>
+
+        <div class="form-control">
+          <label for="password">Confirme Sua Senha</label>
+          <input
+            type="password"
+            confirmPassword="confirmPassword"
+            id="confirmPassword"
+            placeholder="Confirme a sua senha"
+          />
+        </div>
+        <input type="submit" value="Cadastrar" />
+      </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
